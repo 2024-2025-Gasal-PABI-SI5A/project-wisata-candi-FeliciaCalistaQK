@@ -3,6 +3,7 @@ import 'package:wisatacandi/data/candi_data.dart';
 import 'package:wisatacandi/screens/detail_screen.dart';
 import 'package:wisatacandi/screens/profile_screen.dart';
 import 'package:wisatacandi/screens/signin_screen.dart';
+import 'package:wisatacandi/screens/signup_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -24,15 +25,17 @@ class MainApp extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple).copyWith(
+        colorScheme:
+            ColorScheme.fromSeed(seedColor: Colors.deepPurple).copyWith(
           primary: Colors.deepPurple,
           surface: Colors.deepPurple[50],
         ),
         useMaterial3: true,
       ),
       //home: DetailScreen(candi: candiList[0],),
-      home: ProfileScreen(),
-      //home: SignInScreen(),
+      //home: ProfileScreen(),
+      home: SignInScreen(),
+      //home: SignupScreen(),
     );
   }
 }
